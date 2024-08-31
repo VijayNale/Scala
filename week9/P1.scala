@@ -65,18 +65,18 @@ object P1 extends App {
     
     case class Address (city:String, state: String, zip: String)
     
-    /*
-    class User(email:String, password: String) {
-       var firstname: String = _  //null define
-       var lastname: String = _
-       var address: String = _
-      }
     
-     val usr = new User("vijay123@gmail.com","abcd@123")
-     
-     println(usr.firstname.length) //geting null pointer exception
-			*/
-    
+//    class User(email:String, password: String) {
+//       var firstname: String = _  //null define
+//       var lastname: String = _
+//       var address: String = _
+//      }
+//    
+//     val usr = new User("vijay123@gmail.com","abcd@123")
+//     
+//     println(usr.firstname.length) //geting null pointer exception
+//			
+//    
     class User(email:String, password: String) {
       // fields present or not..  it none thats so better way to deals with null is to use option
        var firstname: Option[String] = None 
@@ -93,8 +93,7 @@ object P1 extends App {
      usr.address = Some(Address("Pune","MH","416012"))
      
      println(usr.firstname.getOrElse("<not assigned>"))
-     
-     
+
      
 }
     
